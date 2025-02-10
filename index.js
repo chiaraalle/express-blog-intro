@@ -19,7 +19,7 @@ app.get('/api/bacheca', (req, res) => {
         {
             title: "Cracker alla barbabietola",
             content: `I cracker alla barbabietola sono uno snack stuzzicante e originale da preparare in casa utilizzando ingredienti semplici e genuini. I cracker fatti a mano sono anche un gustoso snack spezza fame, da portare in ufficio o a scuola.`,
-            image: "cracker_barbabietola.avif",
+            image: "imgs/cracker_barbabietola.jpeg",
             tags: ["Antipasti", "Ricette vegetariane", "Ricette al forno"],
           },
           {
@@ -57,5 +57,5 @@ app.get('/api/bacheca', (req, res) => {
 
   //Configuriamo gli asset statici sull’applicazione in modo che si possano visualizzare le immagini associate ad ogni post.
 
-  app.use(express.static('public')); //puoi indicare una cartella in cui Express cercherà i file da restituire direttamente agli utenti quando ne fanno richiesta.
+  app.use(express.static('public')); //Con questa funzione puoi indicare una cartella in cui Express cercherà i file da restituire direttamente agli utenti quando ne fanno richiesta.
   
