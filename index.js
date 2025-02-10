@@ -1,7 +1,5 @@
 /*
 Creiamo il nostro blog personale e giorno dopo giorno lo potremo arricchire con nuove funzionalità sulla base di quello che impareremo.
-
-Configuriamo gli asset statici sull’applicazione in modo che si possano visualizzare le immagini associate ad ogni post.
 Testare su postman
 */
 
@@ -56,5 +54,8 @@ app.get('/api/bacheca', (req, res) => {
   app.listen(port, () => {   
     console.log(`Example app listening on port ${port}`)
   })
+
+  //Configuriamo gli asset statici sull’applicazione in modo che si possano visualizzare le immagini associate ad ogni post.
+
+  app.use(express.static('public')); //puoi indicare una cartella in cui Express cercherà i file da restituire direttamente agli utenti quando ne fanno richiesta.
   
- 
