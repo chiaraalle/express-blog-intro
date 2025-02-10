@@ -6,3 +6,15 @@ Creiamo poi una rotta /bacheca che restituisca un oggetto json con la lista dei 
 Configuriamo gli asset statici sull’applicazione in modo che si possano visualizzare le immagini associate ad ogni post.
 Testare su postman
 */
+
+const express = require('express') //importo express
+const app = express() //salvo il risultato in una variabile, inizializzo express invocandola come una funzione
+const port = 3000 //definisco la prima rotta
+
+app.get('/', (req, res) => {  //definisco la prima rotta
+  res.send('Server del mio blog')
+})
+
+app.listen(port, () => {   //avvio il server mettendolo in ascolto sulla porta che indicato
+  console.log(`Example app listening on port ${port}`)
+})
